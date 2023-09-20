@@ -1,11 +1,11 @@
 from dcim.models import Device
-from extras.scripts import Script, ObjectVar
-from .base_script import BaseScript
+from extras.scripts import ObjectVar
 from scripts.util.common import shared_function
+from netbox_script_manager.scripts import CustomScript
 
-class NestedScript1(Script, BaseScript):
+class CustomScript(Script):
     class Meta:
-        name = "Nested Script 1"
+        name = "Nested Script 2"
         description = "Testing"
 
     device = ObjectVar(
@@ -14,5 +14,5 @@ class NestedScript1(Script, BaseScript):
     )
 
     def run(self, data, commit):
-        self.log_success("NestedScript1")
+        self.log_success("NestedScript2")
         self.log_success(shared_function())

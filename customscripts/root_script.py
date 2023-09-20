@@ -1,8 +1,10 @@
 from dcim.models import Device
-from extras.scripts import Script, ObjectVar
+from extras.scripts import ObjectVar
 from scripts.util.common import shared_function
+from netbox_script_manager.scripts import CustomScript
 
-class RootScript1(Script):
+
+class RootScript1(CustomScript):
     class Meta:
         name = "Root Script 1"
         description = "Testing"
@@ -16,7 +18,7 @@ class RootScript1(Script):
         self.log_success("RootScript1")
         self.log_success(shared_function())
 
-class RootScript2(Script):
+class RootScript2(CustomScript):
     class Meta:
         name = "Root Script 2"
         description = "Testing"
