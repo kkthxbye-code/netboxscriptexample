@@ -1,9 +1,9 @@
 from dcim.models import Device
 from extras.scripts import ObjectVar
-from scripts.util.common import shared_function
+from ..util.common import shared_function
 from netbox_script_manager.scripts import CustomScript
 
-class CustomScript(Script):
+class NestedScript2(CustomScript):
     class Meta:
         name = "Nested Script 2"
         description = "Testing"

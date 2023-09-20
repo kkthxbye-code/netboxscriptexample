@@ -1,6 +1,6 @@
 from dcim.models import Device
 from extras.scripts import ObjectVar
-from scripts.util.common import shared_function
+from .util.common import shared_function
 from netbox_script_manager.scripts import CustomScript
 
 
