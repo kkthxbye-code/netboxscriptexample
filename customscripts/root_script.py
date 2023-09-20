@@ -3,6 +3,7 @@ from extras.scripts import ObjectVar
 from .util.common import shared_function
 from netbox_script_manager.scripts import CustomScript
 
+#test
 
 class RootScript1(CustomScript):
     class Meta:
