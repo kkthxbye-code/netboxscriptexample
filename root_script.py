@@ -16,7 +16,7 @@ class RootScript1(CustomScript):
     )
 
     def run(self, data, commit):
-        self.log_success("RootScript1")
+        self.log_success("RootScript1123")
         self.log_success(shared_function())
 
 class RootScript2(CustomScript):
